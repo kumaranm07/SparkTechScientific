@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -38,9 +38,9 @@
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
-    
-    
+    }, { offset: '80%' });
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -50,7 +50,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -77,11 +77,24 @@
         loop: true,
         dots: false,
         nav: true,
-        navText : [
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ]
     });
-    
+
 })(jQuery);
 
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "balakumaram55@gmail.com",
+        Password: "password",
+        To: "balakumaram55@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}

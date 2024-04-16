@@ -41,24 +41,7 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid py-2 d-none d-lg-flex">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div>
-                    <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                    <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Sat 09am-5pm, Sun Closed</small>
-                </div>
-                <nav class="breadcrumb mb-0">
-                    <a class="breadcrumb-item small text-body" href="#">Career</a>
-                    <a class="breadcrumb-item small text-body" href="#">Support</a>
-                    <a class="breadcrumb-item small text-body" href="#">Terms</a>
-                    <a class="breadcrumb-item small text-body" href="#">FAQs</a>
-                </nav>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
+
 
 
     <!-- Brand Start -->
@@ -109,7 +92,7 @@
                             <div class="dropdown-menu bg-light m-0">
                                 <a href="https://www.gow-mac.com/" class="dropdown-item">Gow mac</a>
                                 <a href="https://www.interscienceuae.com/" class="dropdown-item">Interscience</a>
-                                <a href="https://gassite.com/" class="dropdown-item">Gassite</a>
+                                <a href="https://gassite.com/" class="dropdown-item">Global Analyser Solutions GAS</a>
                                 <a href="https://www.aurorabiomed.com/product/automated-liquid-handling/"
                                     class="dropdown-item">Aurora</a>
                                 <a href="http://meeco.com/meeco/l" class="dropdown-item">Meeco</a>
@@ -182,30 +165,34 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
 
-                    <form onsubmit="sendEmail(); reset(); return false;">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="acab5513-43fc-4bc6-95dd-e75806239ff7">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                        name="Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                        name="Email">
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                        name="Subject">
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 200px"></textarea>
+                                        style="height: 200px" name="Message"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
@@ -314,6 +301,28 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script> src = "https://smtpjs.com/v3/smtp.js"</script>
 
+    <script>
+        function sendEmail() {
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "balakumaram55@gmail.com",
+                Password: "password", // This should be handled securely on the server side
+                To: "balakumaram55@gmail.com",
+                From: email,
+                Subject: subject,
+                Body: message
+            }).then(function (message) {
+                alert("Email sent successfully");
+            }).catch(function (error) {
+                console.error("Error:", error);
+                alert("Failed to send email. Please try again later.");
+            });
+        }
+    </script>
 
     <script src="js/main.js"></script>
 

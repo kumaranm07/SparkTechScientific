@@ -542,6 +542,7 @@
     .contact-info .icon-box-light {
         margin: auto;
         text-align: center;
+
     }
 
     .contact-info h2 {
@@ -550,10 +551,11 @@
         margin-top: 10px;
         /* Add some space between the mail icon and the email address */
     }
-}
 
-.mail-link {
-    flex: 1;
+    .icon-box-light i {
+        font-size: 3rem;
+        /* Adjust the font size as needed */
+    }
 }
 
 

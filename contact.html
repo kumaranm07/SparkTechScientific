@@ -254,17 +254,7 @@
                             <a class="btn btn-link" href="">Terms & Condition</a>
                             <a class="btn btn-link" href="">Support</a>
                         </div>
-                        <div class="col-sm-12">
-                            <h4 class="text-light mb-4">Newsletter</h4>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-0 py-3 px-4"
-                                        style="background: rgba(255, 255, 255, .1);"
-                                        placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
-                                        Up</button>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -301,28 +291,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script> src = "https://smtpjs.com/v3/smtp.js"</script>
 
-    <script>
-        function sendEmail() {
-            var email = document.getElementById("email").value;
-            var subject = document.getElementById("subject").value;
-            var message = document.getElementById("message").value;
 
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "balakumaram55@gmail.com",
-                Password: "password", // This should be handled securely on the server side
-                To: "balakumaram55@gmail.com",
-                From: email,
-                Subject: subject,
-                Body: message
-            }).then(function (message) {
-                alert("Email sent successfully");
-            }).catch(function (error) {
-                console.error("Error:", error);
-                alert("Failed to send email. Please try again later.");
-            });
-        }
-    </script>
 
     <script src="js/main.js"></script>
 

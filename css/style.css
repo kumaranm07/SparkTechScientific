@@ -1,5 +1,3 @@
-/********** Template CSS **********/
-
 .back-to-top {
     position: fixed;
     display: none;
@@ -223,7 +221,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.png) center center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -240,7 +238,7 @@
 
 /*** Features ***/
 .feature {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.png) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial1.png) left center no-repeat;
     background-size: cover;
 }
 
@@ -493,7 +491,7 @@
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/image.jpg) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/beaker2.jpg) left center no-repeat;
     background-size: cover;
 }
 
@@ -526,18 +524,6 @@
 
 
 /*** Contact ***/
-@media (min-width: 992px) {
-    .contact-info::after {
-        position: absolute;
-        content: "";
-        width: 0px;
-        height: 100%;
-        top: 0;
-        left: 50%;
-        border-left: 1px dashed rgba(255, 255, 255, .2);
-    }
-}
-
 @media (max-width: 991.98px) {
     .contact-info::after {
         position: absolute;
@@ -548,7 +534,24 @@
         left: 0;
         border-top: 1px dashed rgba(255, 255, 255, .2);
     }
+
+    .contact-info a {
+        display: block;
+    }
+
+    .contact-info .icon-box-light {
+        margin: auto;
+        text-align: center;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+        margin-top: 10px;
+        /* Add some space between the mail icon and the email address */
+    }
 }
+
 
 
 /*** Footer ***/

@@ -552,6 +552,10 @@
     }
 }
 
+.mail-link {
+    flex: 1;
+}
+
 
 
 /*** Footer ***/

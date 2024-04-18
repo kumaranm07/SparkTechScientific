@@ -1,3 +1,8 @@
+:root {
+    --ca932c: #ca932c;
+    --e9c073: #e9c073;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -95,7 +100,7 @@
 }
 
 .icon-box-primary::before {
-    background: var(--bs-primary);
+    background: var(--e9c073);
 }
 
 .icon-box-light::before {
@@ -120,7 +125,8 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: var(--ca932c);
+
 }
 
 .navbar .dropdown-toggle::after {
@@ -172,6 +178,7 @@
 }
 
 
+
 /*** Header ***/
 @media (min-width: 992px) {
 
@@ -202,8 +209,8 @@
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 3.5rem;
-    background-color: var(--bs-primary);
-    border: 15px solid var(--bs-primary);
+    background-color: var(--e9c073);
+    border: 15px solid var(--e9c073);
 }
 
 @media (max-width: 767.98px) {
@@ -491,7 +498,7 @@
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/beaker2.jpg) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial3.jpg) left center no-repeat;
     background-size: cover;
 }
 

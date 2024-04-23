@@ -68,6 +68,31 @@
         $("#video").attr('src', $videoSrc);
     })
 
+    // prompt
+    $(document).ready(function () {
+        // Show the modal when the page loads
+        $('#userInfoModal').modal('show');
+
+        // Handle form submission
+        $('#userInfoForm').submit(function (event) {
+            // Prevent the default form submission behavior
+
+
+
+            // Assuming the form submission is successful, hide the modal
+            $('#userInfoModal').modal('hide');
+
+
+        });
+
+        // Hide the modal when clicking outside of it or on the close button
+        $('#userInfoModal').click(function (event) {
+            if ($(event.target).is('#userInfoModal')) {
+                $('#userInfoModal').modal('hide');
+            }
+        });
+    });
+
 
     // Testimonial carousel
     $(".testimonial-carousel").owlCarousel({

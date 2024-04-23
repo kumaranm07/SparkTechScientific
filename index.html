@@ -111,6 +111,44 @@
     </div>
     <!-- Navbar End -->
 
+    <!--Prompt-->
+    <div class="modal fade" id="userInfoModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center;">
+
+                    <h2 class="modal-title" style="color: black;">Want to increase the efficiency in your workflow</h2>
+                    <!--  -->
+                </div>
+                <div class="modal-body">
+                    <form id="userInfoForm" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="acab5513-43fc-4bc6-95dd-e75806239ff7">
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html">
+                        <div class="inputBox">
+                            <input class="input" type="text" name="Name" required placeholder="Name">
+                        </div>
+                        <div class="inputBox">
+                            <input class="input" type="email" name="Email" required placeholder="Email">
+                        </div>
+                        <div class="inputBox">
+                            <input class="input" type="text" name="Country" required placeholder="Country">
+                        </div>
+                        <div class="btn-div">
+                            <button type="submit" class="btn btn-primary">Send Email</button>
+                        </div>
+                        <h5 style="color: black;">
+                            <bold>Already Submitted Click anyWhere to Close</bold>
+                        </h5>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- Carousel Start -->
     <div class="container-fluid header-carousel px-0 mb-5">

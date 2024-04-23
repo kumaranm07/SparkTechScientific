@@ -247,6 +247,20 @@
     color: var(--bs-white);
 }
 
+/*products*/
+.service-item img {
+    border-radius: 10px;
+    vertical-align: middle;
+
+}
+
+.service-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensure the container takes up the full height */
+}
 
 /*** Features ***/
 .feature {
@@ -423,7 +437,7 @@
     left: 0;
     bottom: 0;
     transition: .5s;
-    background: var(--bs-primary);
+    background: var(--e9c073);
 }
 
 .service-item:hover::before {
@@ -628,4 +642,104 @@
 
 .copyright a:hover {
     color: var(--bs-primary);
+}
+
+/* Prompt */
+.box {
+    display: none;
+    /* Hide the box initially */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0.625rem;
+}
+
+.box h2 {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input {
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: none;
+    border-bottom: 0.065rem solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label,
+.box .inputBox input:not([value=""])~label {
+    top: -1.125rem;
+    left: 0;
+    color: #03a9f4;
+    font-size: 0.75rem;
+}
+
+.box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #03a9f4;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+}
+
+.box input[type="submit"]:hover {
+    background-color: #1cb1f5;
+}
+
+/* Transparent modal background */
+.modal-content {
+    background: rgba(80, 176, 214, 0.6);
+    border-radius: 20px;
+    margin-top: 10rem;
+}
+
+.input {
+    padding: 10px;
+    background-color: rgba(111, 169, 227, 0.5);
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.inputBox input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.inputBox {
+    margin: 20px;
+    text-align: center;
+}
+
+.btn-div {
+    margin: 30px;
+    text-align: center;
+}
+
+.btn-div button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
 }

@@ -87,7 +87,8 @@ h1,
     font-weight: 600;
     font-style: normal;
     line-height: 1.2;
-    color: #031b4e
+    color: #031b4e;
+    font-stretch: ultra-condensed;
 }
 
 h1,

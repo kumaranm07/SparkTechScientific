@@ -103,9 +103,7 @@
     background: var(--e9c073);
 }
 
-.icon-box-light::before {
-    background: var(--bs-light);
-}
+
 
 
 /*** Navbar ***/
@@ -177,11 +175,6 @@
     }
 }
 
-.brand-start {
-    background: rgb(202, 147, 44);
-    background: linear-gradient(90deg, rgba(202, 147, 44, 1) 30%, rgba(21, 118, 187, 1) 30%, rgba(21, 118, 187, 1) 75%, rgba(202, 147, 44, 1) 75%);
-}
-
 
 
 /*** Header ***/
@@ -233,7 +226,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.jpg) center center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/slide1.jpeg) center center no-repeat;
     background-size: cover;
 }
 
@@ -262,9 +255,74 @@
     /* Ensure the container takes up the full height */
 }
 
+/* paragraph with image*/
+.text-center {
+    text-align: center;
+}
+
+.wow {
+    animation-duration: 1s;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.flex-container img {
+    max-width: 100%;
+
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container p,
+.flex-container ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.topic {
+    margin: 55px;
+    padding: 10px;
+    background-color: #F8B83F;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topic:hover {
+    background-color: #3368c6;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
 /*** Features ***/
 .feature {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial1.jpg) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/bg1.jpg) left center no-repeat;
     background-size: cover;
 }
 
@@ -742,4 +800,10 @@
     border: none;
     border-radius: 10px;
     padding: 10px 50px;
+}
+
+
+.iti__selected-flag {
+    background-color: #6fa9e380;
+    border-radius: 10px;
 }

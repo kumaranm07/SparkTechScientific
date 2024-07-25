@@ -30,6 +30,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Phone Number Country Code-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -45,6 +51,7 @@
 
 
     <!-- Brand Start -->
+
     <div class="container-fluid text-white pb-5 d-none d-lg-flex brand-start"
         style="background-image: url(img/navbar1.jpg); background-repeat: no-repeat; background-position: center; height: 140px;">
         <div class="container pb-2">
@@ -81,7 +88,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
 
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">SPARK TECH SCIENTIFIC</h1>
+
+                    <h1 class="h1 text-primary m-0">SPARK TECH SCIENTIFIC</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -89,14 +97,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
-                            <a href="principles.html" class="nav-link">Our principles</a>
-
+                            <a href="#" class="nav-link active">Our principles</a>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                         <h5 style="color: #3368c6;">Idea Of Solution</h5>
@@ -106,110 +113,72 @@
         </div>
     </div>
     <!-- Navbar End -->
+    <div class="service-div container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s"
+        style="background-image: url(img/image-princ.jpg); background-size: 100% 100%; background-repeat: no-repeat; height: 350px; margin-top: 30px; margin-bottom: 20px;">
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s"
-        style="background-image: url(img/contact.jpg); background-size: 100% 100%; background-repeat: no-repeat; height: 400px; ">
-        <div class="container text-center py-5 mt-4">
-
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0" style="margin-top: 130px;">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Contact</li>
-                </ol>
-            </nav>
-        </div>
     </div>
-    <!-- Page Header End -->
 
+    <!-- Content Start -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Have Any Query? Feel Free To Contact Us</h1>
-                <p class="mb-5">We are focussed on providing high end service to all our customers and working with them
-                    to provide 24 x 7 service, application support, operational Training, Calibration services,
-                    Documentation and online support</p>
-            </div>
-            <div class="row contact-info position-relative g-0 mb-5" style="width: 100%;">
-                <div class="col-lg-6">
-                    <a href="tel:+0123456789" class="d-flex justify-content-lg-center bg-primary p-4"
-                        style="border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
-                        <div class="icon-box-light flex-shrink-0">
-                            <i class="bi bi-phone text-dark"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="text-white">Call Us</h5>
-                            <h2 class="text-white mb-0">+97150 708 3903</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a href="mailto:info@example.com" class="d-flex justify-content-lg-center bg-primary p-4 mail-link"
-                        style="border-top-right-radius: 12px; border-bottom-right-radius: 12px;">
-                        <div class="icon-box-light flex-shrink-0">
-                            <i class="bi bi-envelope text-dark"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="text-white">Mail Us</h5>
-                            <h2 class="text-white mb-0">info@sparktechscientific.com</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="cards">
 
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="acab5513-43fc-4bc6-95dd-e75806239ff7">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                        name="Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                        name="Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                        name="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 200px" name="Message"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+        <div class="card-1">
+            <a href="https://www.gow-mac.com/">
+                <div>
+                    <img src="img/image3.jpg" alt="gow-mac">
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <iframe class="w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1607.3967682745294!2d55.328467760253794!3d25.254311175597845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cd88efab80f%3A0x4e795f0e11a9bd5a!2sDubai%20National%20Insurance%20Building!5e0!3m2!1sen!2sin!4v1712431171283!5m2!1sen!2sin"
-                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                <div class="title">
+                    <h4>Gow-Mac</h4>
                 </div>
-            </div>
+                <p>About Gow-Mac</p>
+            </a>
         </div>
+
+
+        <div class="card-1">
+            <a href="https://gassite.com/">
+                <div>
+                    <img src="img/image-gas.jpg" alt="gas">
+                </div>
+                <div class="title">
+                    <h4>Global Analyser Solution G.A.S</h4>
+                </div>
+                <p>About Global Analyser Solution</p>
+            </a>
+        </div>
+        <div class="card-1">
+            <a href="https://www.aurorabiomed.com/product/automated-liquid-handling/">
+
+                <div>
+                    <img src="img/image-aurora.jpg" alt="aurora" style="width: 200px;">
+                </div>
+                <div class="title">
+                    <h4>Aurora</h4>
+                </div>
+                <p>About Aurora</p>
+            </a>
+        </div>
+
+
+        <div class="card-1">
+            <a href="http://meeco.com/meeco/l">
+                <div>
+                    <img src="img/image1.jpg" alt="meeco">
+                </div>
+                <div class="title">
+                    <h4>Meeco</h4>
+                </div>
+                <p>About Meeco</p>
+            </a>
+        </div>
+
     </div>
-    <!-- Contact End -->
+
+
+    <!-- Content End -->
+
+
+
 
 
     <!-- Footer Start -->
@@ -218,12 +187,13 @@
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="h1 text-primary mb-0">SPARK TECH SCIENTIFIC</h1>
+                        <h1 class="h1 text-primary mb-0">SPARK TECH SCIENTIFIC </h1>
                         <h5 class="text-primary">LABORATORY EQUIPMENT TRADING LLC</h5>
                         <span>
                             <h5 class="text-white">Idea Of Solution</h5>
                         </span>
                     </a>
+
                     <p class="fs-5 mb-4">Spark Tech's laboratory equipment has truly transformed our operations. Their
                         state-of-the-art instruments have greatly enhanced our efficiency and accuracy, allowing us to
                         achieve groundbreaking results in our research</p>
@@ -286,11 +256,10 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script> src = "https://smtpjs.com/v3/smtp.js"</script>
 
-
-
+    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js'></script>
 
 </body>
 

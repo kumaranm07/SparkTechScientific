@@ -805,6 +805,64 @@
 
 
 .iti__selected-flag {
+
     background-color: #6fa9e380;
     border-radius: 10px;
+}
+
+/* Principles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(100% - 32px);
+    max-width: 500px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.card-1 .title {
+    padding: 16px;
+    font-size: 1.25em;
+    color: #333;
+}
+
+@media (min-width: 600px) {
+    .card-1 {
+        flex: 1 1 calc(50% - 32px);
+    }
+}
+
+@media (min-width: 900px) {
+    .card-1 {
+        flex: 1 1 calc(25% - 32px);
+    }
+}
+
+.card-1 .img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
